@@ -30,8 +30,11 @@
 .header__divider {
   width: 1px;
   height: 33px;
+  background-color: #2f3d47;
 }
+.header__logo-rbis {
 
+}
 .content {
   display: flex;
   flex-direction: column;
