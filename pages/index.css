@@ -1,20 +1,47 @@
+@import url(../styles/vendor/normalize.css);
+
+.text-reset {
+  margin: 0;
+  padding: 0;
+}
+
 .page {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  background-color: #2f3d47;
+  background-color: #fff;
   font-family: 'Inter', Arial, sans-serif;
 
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
+.section {
+  max-width: 1140px;
+}
+
 .header {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   max-width: 1920px;
+}
+.header__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 77px;
+  background-color: #fff;
+}
+.header__info-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -2px;
 }
 .header__logo-geely {
   min-width: 171px;
@@ -31,10 +58,139 @@
   width: 1px;
   height: 33px;
   background-color: #2f3d47;
+
+  margin-right: 23px;
 }
 .header__logo-rbis {
+  min-width: 152px;
+  min-height: 27px;
 
+  background-image: url(../images/logo/logo-rbis.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-position: center;
+
+  margin-right: 90px;
 }
+
+.header__icon-maps-and-flags {
+  min-width: 13px;
+  min-height: 18px;
+
+  background-image: url(../images/maps-and-flags.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-position: center;
+
+  margin-right: 9px;
+}
+.header_text-address {
+  font-size: 12px;
+  font-family: "Open Sans";
+  color: #565656;
+  line-height: 1.167;
+
+  margin-right: 73px;
+}
+
+.header__icon-call {
+  min-width: 16px;
+  min-height: 16px;
+
+  background-image: url(../images/call.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-position: center;
+
+  margin-right: 4px;
+}
+.header__text-call-number {
+  font-size: 16px;
+  font-family: "Open Sans";
+
+  color: #303030;
+  font-weight: bold;
+
+  line-height: 1.2;
+  margin-right: 81px;
+}
+
+.header__button-make-call {
+  width: 175px;
+  height: 33px;
+  background-color: transparent;
+  border: 1px solid #002d96;
+
+  cursor: pointer;
+
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: #002d96;
+  line-height: 1.2;
+}
+
+.header__menu {
+  background-color: #2F3D47;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  min-height: 44px;
+}
+.header__menu-list, .header__menu-second-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: flex;
+  justify-content: space-between;
+}
+.header__menu-item, .header__menu-second-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__menu-item:nth-child(1) {
+  margin-right: 40px;
+}
+.header__menu-item:nth-child(2) {
+  margin-right: 33px;
+}
+.header__menu-item:nth-child(3) {
+  margin-right: 27px;
+}
+
+.header__menu-second-item:nth-child(1) {
+  margin-right: 27px;
+}
+.header__menu-second-item:nth-child(2) {
+  margin-right: 28px;
+}
+.header__menu-second-item:nth-child(3) {
+  margin-right: 26px;
+}
+.header__menu-second-item:nth-child(4) {
+  margin-right: 32px;
+}
+
+.header__menu-link, .header__menu-second-link {
+  font-size: 13px;
+  font-family: "Open Sans";
+
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-decoration: none;
+  margin-top: -2px;
+}
+
+
 .content {
   display: flex;
   flex-direction: column;
