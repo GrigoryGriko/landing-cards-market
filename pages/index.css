@@ -132,7 +132,7 @@
 }
 
 .header__button-make-call {
-  width: 175px;
+  min-width: 175px;
   height: 33px;
   background-color: transparent;
   border: 1px solid #002d96;
@@ -222,10 +222,55 @@
 }
 
 .offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 1920px;
   height: 690px;
 
   background-image: url(../images/banner.jpg);
   background-repeat: no-repeat;
   background-position: bottom center;
+}
+
+.offer__wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  max-width: 1920px;
+}
+.offer__content {
+  margin: auto;
+  padding: 30px;
+  width: 100%;
+  max-width: 655px;
+  box-sizing: border-box;
+}
+
+h3 {
+  background: #fff;
+  color: #3498db;
+  font-size: 36px;
+  line-height: 100px;
+  margin: 10px;
+  padding: 2%;
+  position: relative;
+  text-align: center;
+}
+
+.slick-slider {
+  position: static;
+}
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-prev {
+  left: 69px;
+}
+
+.slick-next {
+  right: 84px;
 }
