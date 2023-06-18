@@ -60,7 +60,7 @@
   object-position: center;
 
   margin-left: 1px;
-  margin-right: 25px;
+  margin-right: 24px;
   margin-top: 4px;
 }
 .header__divider {
@@ -95,7 +95,7 @@
   margin-bottom: 3px;
 }
 .header_text-address {
-  min-width: 167px;
+  min-width: 164px;
   font-size: 12px;
   font-family: "Open Sans";
   font-style: normal;
@@ -103,7 +103,7 @@
   line-height: 1.167;
 
   margin-bottom: 2px;
-  margin-right: 73px;
+  margin-right: 72px;
 }
 
 .header__icon-call {
@@ -118,7 +118,7 @@
   margin-right: 4px;
 }
 .header__text-call-number {
-  min-width: 147px;
+  min-width: 145px;
   font-size: 16px;
   font-family: "Open Sans";
   font-style: normal;
@@ -127,7 +127,7 @@
   font-weight: bold;
 
   line-height: 1.2;
-  margin-right: 81px;
+  margin-right: 79px;
   margin-top: 2px;
 }
 
