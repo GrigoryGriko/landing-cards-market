@@ -244,9 +244,13 @@
   max-width: 1920px;
 }
 .offer__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
   margin: auto;
   width: 100%;
-  max-width: 830px;
   box-sizing: border-box;
 }
 
@@ -299,6 +303,7 @@
 }
 
 .slick-slider {
+  max-width: 832px;
   position: static;
   margin-left: -2px;
 }
@@ -337,22 +342,56 @@
 }
 
 .offer__form-grid {
+  width: 1140px;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
 }
 
-.offer__booke-text {
+.offer__book-text {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+
+  font-size: 20px;
+  font-family: "Open Sans";
+  color: #fff;
+  font-weight: bold;
+  margin-top: 302px;
 }
 .offer__input-call-number {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+
+  width: 330px;
+  height: 55px;
+  border: 1px solid #000;
+
+  padding-left: 18px;
+  margin-top: 17px;
+  box-sizing: border-box;
 }
+.offer__input-call-number::placeholder {
+  font-size: 16px;
+  font-family: "Open Sans";
+  color: rgba(0, 0, 0, 0.6);
+
+}
+
 .offer__button-get-offer {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+
+  width: 330px;
+  height: 55px;
+  border: none;
+  background-color: #002d96;
+
+  color: #fff;
+  font-size: 16px;
+  font-family: "Open Sans";
+
+
+  cursor: pointer;
 }
 .offer__checkbox-accept-agreement {
   grid-column: 2 / 3;
