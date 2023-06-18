@@ -304,7 +304,7 @@
 
 .slick-prev, .slick-next {
   position: absolute;
-  top: 50%;
+  top: clac(50% + 5px);
   transform: translateY(-50%);
 }
 
@@ -317,19 +317,18 @@
   object-position: center;
   transition: opacity .3s ease;
 }
-.slick-prev:hover, .slick-next:hover {
-  opacity: .8;
-}
 
 .slick-prev, .slick-prev:hover {
-  left: 69px;
+  left: 62px;
   background-image: url(../images/left-arrow.png);
 }
 
 .slick-next, .slick-next:hover {
-  right: 84px;
-
+  right: 76px;
   background-image: url(../images/right-arrow.png);
+}
+.slick-prev:hover, .slick-next:hover {
+  opacity: .8;
 }
 
 .slick-prev::before, .slick-next::before {
