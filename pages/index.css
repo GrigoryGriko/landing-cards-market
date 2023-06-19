@@ -506,12 +506,25 @@
 }
 
 .info__warrantly {
+  display: flex;
   width: 166px;
   height: 81px;
   background-image: url(../images/warranty-block.png);
   background-repeat: no-repeat;
   background-size: contain;
   object-position: center;
+}
+.info__warrantly-text, .info__warrantly-text-cap {
+  font-family: "Open Sans";
+  color: #fff;
+  font-weight: bold;
+}
+
+.info__warrantly-text {
+  font-size: 83px;
+}
+.info__warrantly-text-cap {
+  font-size: 13px;
 }
 
 .info__slider-elements-car {
