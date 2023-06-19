@@ -481,3 +481,18 @@
 .offer__info-amount-percent {
   font-size: 34px;
 }
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 1920px;
+  width: 100%;
+  min-height: 738px;
+
+  background-color: #fff;
+  background-image: url(../images/info-background.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
