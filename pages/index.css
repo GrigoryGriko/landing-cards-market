@@ -344,7 +344,7 @@
 .offer__form-grid {
   width: 1140px;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 330px 345px auto;
   grid-template-rows: auto auto auto;
 }
 
@@ -390,13 +390,39 @@
   font-size: 16px;
   font-family: "Open Sans";
 
+  margin-left: 15px;
+  margin-top: 16px;
 
   cursor: pointer;
 }
 .offer__checkbox-accept-agreement {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
+
+  display: flex;
+
+  margin-left: 13px;
+  margin-top: 8px;
 }
+
+.offer__checkbox-btn {
+  margin-right: 7px;
+}
+
+.offer__agreement-cap {
+  margin-top: 1px;
+
+  font-size: 11px;
+  font-family: "Open Sans";
+  color: #fff;
+  font-weight: 400;
+}
+.offer__agreement-text {
+  text-decoration: underline;
+  color: #fff;
+}
+
+
 .offer__info-amount {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
