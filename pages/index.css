@@ -485,7 +485,6 @@
 .info {
   display: flex;
   justify-content: center;
-  align-items: center;
 
   max-width: 1920px;
   width: 100%;
@@ -495,4 +494,48 @@
   background-image: url(../images/info-background.png);
   background-repeat: no-repeat;
   background-position: left center;
+}
+.info__wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.info__show-cars {
+
+}
+
+.info__slider-elements-car {
+  margin-top: 143px;
+  max-width: 142px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info__slider-img {
+  margin-bottom: 17px
+}
+.info__slider-img:last-child {
+  margin-bottom: 0;
+}
+.slick-prev2, .slick-next2 {
+  display: block;
+  min-width: 30px;
+  min-height: 16px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-position: center;
+
+  cursor: pointer;
+}
+
+.slick-prev2 {
+  margin-bottom: 15px;
+  background-image: url(../images/left-chevron.png);
+}
+.slick-next2 {
+  background-image: url(../images/right-chevron.png);
+}
+.slick-vertical {
 }
