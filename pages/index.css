@@ -505,6 +505,15 @@
 
 }
 
+.info__warrantly {
+  width: 166px;
+  height: 81px;
+  background-image: url(../images/warranty-block.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-position: center;
+}
+
 .info__slider-elements-car {
   margin-top: 143px;
   max-width: 142px;
