@@ -310,7 +310,7 @@
 
 .slick-prev, .slick-next {
   position: absolute;
-  top: clac(50% + 5px);
+  top: calc(50% + 5px);
   transform: translateY(-50%);
 }
 
@@ -381,6 +381,13 @@
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 
+  padding: 0;
+  padding-left: 23px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   width: 330px;
   height: 55px;
   border: none;
@@ -395,6 +402,13 @@
 
   cursor: pointer;
 }
+.offer__right-arrow-btn {
+  width: 27px;
+  height: 13px;
+
+  margin-right: 18px;
+}
+
 .offer__checkbox-accept-agreement {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
@@ -402,7 +416,7 @@
   display: flex;
 
   margin-left: 13px;
-  margin-top: 8px;
+  margin-top: 7px;
 }
 
 .offer__checkbox-btn {
@@ -422,8 +436,48 @@
   color: #fff;
 }
 
-
 .offer__info-amount {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 334px;
+  min-width: 334px;
+  min-height: 75px;
+
+  margin-left: 100px;
+
+  background-image: url(../images/offer-info-amount.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-position: center;
+}
+
+.offer__info-amount-text {
+  margin-top: 1px;
+
+  margin-left: 33px;
+  font-size: 26px;
+  font-family: "Open Sans";
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 23px;
+}
+.offer__info-amount-sub-text {
+  font-size: 20px;
+}
+.offer__info-amount-value {
+  font-size: 50px;
+  font-family: "Open Sans";
+  color: #002d96;
+  font-weight: bold;
+
+  margin-right: 12px;
+}
+.offer__info-amount-percent {
+  font-size: 34px;
 }
