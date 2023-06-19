@@ -512,6 +512,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  margin-left: 0;
 }
 .info__slider-img {
   margin-bottom: 17px
