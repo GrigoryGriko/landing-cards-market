@@ -42,6 +42,8 @@
   width: 100%;
   min-height: 68px;
   background-color: #fff;
+
+  overflow: hidden;
 }
 .header__info-wrapper {
   display: flex;
@@ -454,6 +456,8 @@
   background-repeat: no-repeat;
   background-size: contain;
   object-position: center;
+
+  cursor: pointer;
 }
 
 .offer__info-amount-text {
@@ -554,6 +558,8 @@
   background-repeat: no-repeat;
   background-size: contain;
   object-position: center;
+
+  cursor: pointer;
 }
 .info__warrantly-text, .info__warrantly-text-cap {
   font-family: "Open Sans";
@@ -716,6 +722,8 @@
   background-repeat: no-repeat;
   background-size: contain;
   object-position: center;
+
+  cursor: pointer;
 }
 .info__conditions-button-span-sum {
   font-size: 24px;
@@ -739,9 +747,8 @@
   margin-bottom: 33px;
 }
 
-.info__conditions-benefit-item {
-  display: flex;
-  margin-bottom: 33px;
+.info__conditions-benefit-item:last-child {
+  margin-bottom: 0;
 }
 
 .info__conditions-benefit-item:nth-child(2) {
@@ -784,4 +791,71 @@
 .info__conditions-benefit-span-currency {
   color: #002d96;
   text-transform: normal;
+}
+
+.info__conditions-button_params {
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 461px;
+  height: 51px;
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: #000;
+  font-weight: 400;
+  background-color: transparent;
+
+  margin-bottom: 14px;
+
+  cursor: pointer;
+}
+
+.info__conditions-button-signup {
+  margin-top: 51px;
+  background-color: #fff;
+  border: 1px solid #000;
+
+  padding-left: 39px;
+  transition: all .3s ease;
+}
+.info__conditions-button-signup-arrow {
+  margin-right: 23px;
+}
+.info__conditions-button-signup:hover {
+  background-color: #000;
+  color: #fff;
+}
+.info__conditions-button-plan {
+  background-color: #CCD5EA;
+  border: none;
+
+  padding-left: 27px;
+}
+.info__conditions-button-plan-percent {
+  font-weight: bold;
+}
+.info__conditions-button-price {
+  background-color: #002D96;
+  border: none;
+  color: #fff;
+
+  padding-left: 38px;
+  margin-bottom: 0;
+}
+
+.info__coolray {
+  min-width: 122px;
+  min-height: 529px;
+
+  margin-top: -3px;
+  margin-left: 41px;
+
+  background-image: url(../images/coolray.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-position: center;
 }
