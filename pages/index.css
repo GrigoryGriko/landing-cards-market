@@ -27,6 +27,43 @@
   opacity: .8;
 }
 
+.popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.popup__call-number {
+  margin: 0;
+  padding: 0;
+
+  width: 330px;
+  height: 55px;
+  border: 1px solid #000;
+
+  font-size: 16px;
+  font-family: "Open Sans";
+
+  padding-left: 18px;
+  margin-top: 17px;
+  box-sizing: border-box;
+}
+.popup__button {
+  margin: 0;
+  padding: 0;
+
+  margin-top: 30px;
+
+  min-width: 330px;
+  min-height: 55px;
+
+  font-size: 16px;
+  font-family: "Open Sans";
+  background-color: #002D96;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
 
 .header {
   display: flex;
