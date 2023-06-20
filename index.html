@@ -3,13 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
   <link rel="stylesheet" href="./pages/index.css">
   <title>Автосалон GEELY</title>
 </head>
 <body>
   <div class="page">
+    <div class="popup" style="display: none; width: 500px;" id="hidden-popup">
+      <input class="popup__call-number" placeholder="Номер телефона">
+      <button class="popup__button text-reset">
+        Отправить
+      </button>
+    </div>
+
     <header class="header">
-      <section class="header__info">
+      <div class="header__info">
         <div class="header__info-wrapper section">
           <a class="header__logo-geely" href="#"></a>
 
@@ -28,32 +41,32 @@
             + 7 (778) 003-76-86
           </address>
 
-          <button class="header__button-make-call">
+          <button data-fancybox href="#hidden-popup" class="header__button-make-call">
             Заказать звонок
           </button>
         </div>
-      </section>
+      </div>
 
-      <section class="header__menu">
+      <div class="header__menu">
         <nav class="header__menu-wrapper section">
           <ul class="header__menu-list">
             <li class="header__menu-item">
-              <a class="header__menu-link" href="#">
+              <a class="header__menu-link link-hover-opacity" href="#">
                 COOLRAY
               </a>
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link" href="#">
+              <a class="header__menu-link link-hover-opacity" href="#">
                 AZKARRA
               </a>
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link" href="#">
+              <a class="header__menu-link link-hover-opacity" href="#">
                 TUGELLA
               </a>
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link" href="#">
+              <a class="header__menu-link link-hover-opacity" href="#">
                 MONJARO
               </a>
             </li>
@@ -61,43 +74,299 @@
 
           <ul class="header__menu-second-list">
             <li class="header__menu-second-item">
-              <a class="header__menu-second-link" href="#">
+              <a class="header__menu-second-link link-hover-opacity" href="#">
                 ПОДБОР КОМПЛЕКТАЦИЙ
               </a>
             </li>
             <li class="header__menu-second-item">
-              <a class="header__menu-second-link" href="#">
+              <a class="header__menu-second-link link-hover-opacity" href="#">
                 ТРЕЙД-ИН
               </a>
             </li>
             <li class="header__menu-second-item">
-              <a class="header__menu-second-link" href="#">
+              <a class="header__menu-second-link link-hover-opacity" href="#">
                 КРЕДИТ
               </a>
             </li>
             <li class="header__menu-second-item">
-              <a class="header__menu-second-link" href="#">
+              <a class="header__menu-second-link link-hover-opacity" href="#">
                 ТЕСТ-ДРАЙВ
               </a>
             </li>
             <li class="header__menu-second-item">
-              <a class="header__menu-second-link" href="#">
+              <a class="header__menu-second-link link-hover-opacity" href="#">
                 КОНТАКТЫ
               </a>
             </li>
           </ul>
         </nav>
-      </section>
+      </div>
     </header>
     <main class="content">
       <section class="offer">
+        <div class="offer__wrapper">
+          <div class="offer__container section">
+            <div class="offer__content">
+              <div class="slider single-item">
+                <div>
+                  <h1 class="offer__title text-reset">
+                    GEELY с выгодой
+                    <span class="offer__title-sum">3 000 000</span>
+                    <span class="offer__title-currency">₸</span>
+                  </h1>
+                  <ul class="offer__list">
+                    <li class="offer__item">
+                      <p class="offer__item-text text-reset">
+                        Рассрочка на 1 год — <span class="offer__item-text-value">0%</span>
+                      </p>
+                    </li>
+                    <li class="offer__item">
+                      <p class="offer__item-text text-reset">
+                        Кредит на 2 года ставка — <span class="offer__item-text-value">10%</span>
+                      </p>
+                    </li>
+                    <li class="offer__item">
+                      <p class="offer__item-text text-reset">
+                        Кредит на 5 лет ставка — <span class="offer__item-text-value">15.5%</span>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
 
+                <div>
+                  <h1 class="offer__title text-reset">
+                    GEELY Ultra с выгодой
+                    <span class="offer__title-sum">4 500 000</span>
+                    <span class="offer__title-currency">₸</span>
+                  </h1>
+                  <ul class="offer__list">
+                    <li class="offer__item">
+                      <p class="offer__item-text text-reset">
+                        Рассрочка на 1 год — <span class="offer__item-text-value">0%</span>
+                      </p>
+                    </li>
+                    <li class="offer__item">
+                      <p class="offer__item-text text-reset">
+                        Кредит на 2 года ставка — <span class="offer__item-text-value">9%</span>
+                      </p>
+                    </li>
+                    <li class="offer__item">
+                      <p class="offer__item-text text-reset">
+                        Кредит на 5 лет ставка — <span class="offer__item-text-value">14.5%</span>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h1 class="offer__title text-reset">
+                    GEELY Smart с выгодой
+                    <span class="offer__title-sum">4 000 000</span>
+                    <span class="offer__title-currency">₸</span>
+                  </h1>
+                  <ul class="offer__list">
+                    <li class="offer__item">
+                      <p class="offer__item-text text-reset">
+                        Рассрочка на 1 год — <span class="offer__item-text-value">0%</span>
+                      </p>
+                    </li>
+                    <li class="offer__item">
+                      <p class="offer__item-text text-reset">
+                        Кредит на 2 года ставка — <span class="offer__item-text-value">8%</span>
+                      </p>
+                    </li>
+                    <li class="offer__item">
+                      <p class="offer__item-text text-reset">
+                        Кредит на 5 лет ставка — <span class="offer__item-text-value">13.5%</span>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h1 class="offer__title text-reset">
+                    GEELY Deluxe с выгодой
+                    <span class="offer__title-sum">6 000 000</span>
+                    <span class="offer__title-currency">₸</span>
+                  </h1>
+                  <ul class="offer__list">
+                    <li class="offer__item">
+                      <p class="offer__item-text text-reset">
+                        Рассрочка на 1 год — <span class="offer__item-text-value">0%</span>
+                      </p>
+                    </li>
+                    <li class="offer__item">
+                      <p class="offer__item-text text-reset">
+                        Кредит на 2 года ставка — <span class="offer__item-text-value">7%</span>
+                      </p>
+                    </li>
+                    <li class="offer__item">
+                      <p class="offer__item-text text-reset">
+                        Кредит на 5 лет ставка — <span class="offer__item-text-value">12.5%</span>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="offer__form-grid">
+                <h2 class="offer__book-text text-reset">
+                  Успейте забронировать!
+                </h2>
+
+                <input class="offer__input-call-number" type="text" name="call-number" placeholder="Номер телефона">
+
+                <button data-fancybox href="#hidden-popup" class="offer__button-get-offer link-hover-opacity">
+                  Получить предложение
+
+                  <image class="offer__right-arrow-btn" src="./images/right-arrow-btn.png" alt="вправо">
+                </button>
+
+                <label class="offer__checkbox-accept-agreement">
+                  <input class="offer__checkbox-btn" type="checkbox" name="accept-agreement">
+                  <p class="offer__agreement-cap text-reset">
+                    Согласен на <a href="#" class="offer__agreement-text link-hover-opacity">обработку персональных данных</a>
+                  </p>
+                </label>
+
+                <div data-fancybox href="#hidden-popup" class="offer__info-amount link-hover-opacity">
+                  <p class="offer__info-amount-text text-reset">
+                    Честная <br>
+                    <span class="offer__info-amount-sub-text">рассрочка</span>
+                  </p>
+
+                  <p class="offer__info-amount-value text-reset">
+                    0.01<span class="offer__info-amount-percent">%</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="info">
+        <div class="info__wrapper section">
+          <div class="info__show-cars">
+            <div class="info__slider-elements-car slick-vertical">
+                <img class="info__slider-img" src="images/elements-car1.png">
 
+                <img class="info__slider-img" src="images/elements-car2.png">
+
+                <img class="info__slider-img" src="images/elements-car3.png">
+
+                <img class="info__slider-img" src="images/elements-car4.png">
+            </div>
+
+            <div class="info__variations">
+              <div class="info__choose">
+                <div data-fancybox href="#hidden-popup" class="info__warrantly link-hover-opacity">
+                  <p class="info__warrantly-text text-reset">
+                    6
+                  </p>
+                  <p  class="info__warrantly-text-cap text-reset">
+                    лет<br>
+                    гарантии
+                  </p>
+                </div>
+
+                <div class="info__select-complete">
+                  <a data-fancybox href="#hidden-popup" class="info__select-complete-text text-reset link-hover-opacity" href="#">
+                    подобрать<br>
+                    комплектацию
+                  </a>
+
+                  <a data-fancybox href="#hidden-popup" class="info__select-complete-arrow link-hover-opacity" href="#">
+                    <img src="./images/arrow-right-select-complete.png">
+                  </a>
+                </div>
+              </div>
+
+              <div class="info__slider-color-car car-color-slider">
+                <img class="info__slider-color-car-img" src="images/car-red.png">
+
+                <img class="info__slider-color-car-img" src="images/car-gray.png">
+
+                <img class="info__slider-color-car-img" src="images/car-white.png">
+
+                <img class="info__slider-color-car-img" src="images/car-dark-gray.png">
+
+                <img class="info__slider-color-car-img" src="images/car-blue.png">
+              </div>
+            </div>
+          </div>
+
+          <div class="info__conditions">
+            <h2 class="info__conditions-header text-reset">
+              GEELY <span class="info__conditions-header-span">COOLRAY</span>
+            </h2>
+            <button data-fancybox href="#hidden-popup" class="info__conditions-button link-hover-opacity">
+              выгода до <span class="info__conditions-button-span-sum">1 800 000</span>
+              <span class="info__conditions-button-span-currency">₸</span>
+            </button>
+
+            <ul class="info__conditions-benefit-list">
+              <li class="info__conditions-benefit-item">
+                <img class="info__conditions-benefit-img info__conditions-benefit-img_margin-first" src="images/conditions-benefit-refresh.png">
+                <p class="info__conditions-benefit-text text-reset">
+                  выгода по трейд-ин<br>
+                  <span class="info__conditions-benefit-span-pre">до</span>
+                  <span class="info__conditions-benefit-span-sum">900 000</span>
+                  <span class="info__conditions-benefit-span-currency">₸</span>
+                </p>
+              </li>
+
+              <li class="info__conditions-benefit-item">
+                <img class="info__conditions-benefit-img info__conditions-benefit-img_margin-third" src="images/conditions-benefit-credit-card.png">
+                <p class="info__conditions-benefit-text text-reset">
+                  выгода по кредиту<br>
+                  от <span class="info__conditions-benefit-span-sum">600 000</span>
+                  <span class="info__conditions-benefit-span-currency">₸</span>
+                </p>
+              </li>
+
+              <li class="info__conditions-benefit-item">
+                <img class="info__conditions-benefit-img info__conditions-benefit-img_margin-second" src="images/conditions-benefit-gift.png">
+                <p class="info__conditions-benefit-text text-reset">
+                  пакет доп.оборудования<br>
+                  в подарок <span class="info__conditions-benefit-span-sum">300 000</span>
+                  <span class="info__conditions-benefit-span-currency">₸</span>
+                </p>
+              </li>
+            </ul>
+
+            <button data-fancybox href="#hidden-popup" class="info__conditions-button-signup info__conditions-button_params">
+              Записаться на тест-драйв
+
+              <img class="info__conditions-button-signup-arrow" src="./images/arrow-right-select-complete-black.png">
+            </button>
+            <button data-fancybox href="#hidden-popup" class="info__conditions-button-plan info__conditions-button_params link-hover-opacity">
+              <p class="info__conditions-button-plan-text text-reset">
+                Честная рассрочка <span class="info__conditions-button-plan-percent">0.01%</span>
+              </p>
+
+              <img class="info__conditions-button-signup-arrow" src="./images/arrow-right-select-complete.png">
+            </button>
+            <button data-fancybox href="#hidden-popup" class="info__conditions-button-price info__conditions-button_params link-hover-opacity">
+              Узнать цену
+
+              <img class="info__conditions-button-signup-arrow" src="./images/arrow-right-select-complete.png">
+            </button>
+          </div>
+
+          <div class="info__coolray"> </div>
+        </div>
       </section>
     </main>
   </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="./pages/index.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
 </body>
 </html>
