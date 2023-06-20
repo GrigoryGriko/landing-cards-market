@@ -1,5 +1,5 @@
 # landing-cards-market
-## Лэндинг тренировочного проекта по неидеальному макету.
+## Лэндинг тренировочного проекта по макету со сдвинутыми элементами.
 
 Ссылка на Github pages: https://grigorygriko.github.io/landing-cards-market/
 
