@@ -1,4 +1,5 @@
 @import url(../styles/vendor/normalize.css);
+@import url(../styles/vendor/fonts.css);
 
 .text-reset {
   margin: 0;
