@@ -509,6 +509,33 @@
   margin-left: 25px;
 }
 
+.info__slider-img {
+  margin-bottom: 17px
+}
+.info__slider-img:last-child {
+  margin-bottom: 0;
+}
+.slick-prev2, .slick-next2 {
+  display: block;
+  min-width: 30px;
+  min-height: 16px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-position: center;
+
+  cursor: pointer;
+}
+
+.slick-prev2 {
+  margin-bottom: 15px;
+  background-image: url(../images/left-chevron.png);
+}
+.slick-next2 {
+  background-image: url(../images/right-chevron.png);
+}
+.slick-vertical {
+}
+
 .info__choose {
   display: flex;
   margin-top: 173px;
@@ -561,7 +588,7 @@
 }
 
 .info__slider-elements-car {
-  margin-top: 143px;
+  margin-top: 44px;
   max-width: 142px;
   display: flex;
   flex-direction: column;
@@ -570,29 +597,72 @@
 
   margin-left: 0;
 }
-.info__slider-img {
-  margin-bottom: 17px
-}
-.info__slider-img:last-child {
-  margin-bottom: 0;
-}
-.slick-prev2, .slick-next2 {
-  display: block;
-  min-width: 30px;
-  min-height: 16px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  object-position: center;
 
+.info__slider-color-car {
+  display: flex;
+  flex-direction: column;
+}
+
+.car-color-slick-dots {
+  display: flex;
+  justify-content: center;
+}
+
+.car-color-slider {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.car-color-slick-dots {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.car-color-slick-dots button {
+  position: relative;
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  margin-right: 18px;
+  border: none;
+  outline: none;
   cursor: pointer;
 }
 
-.slick-prev2 {
-  margin-bottom: 15px;
-  background-image: url(../images/left-chevron.png);
+.car-color-slick-dots li {
+  font-size: 0;
 }
-.slick-next2 {
-  background-image: url(../images/right-chevron.png);
+
+.car-color-slick-dots li[class="slick-active"] button::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  background: transparent;
+  border: 1px solid rgb(0, 0, 0);
 }
-.slick-vertical {
+.car-color-slick-dots li:nth-child(1) button {
+  background: #FF0000;
+}
+.car-color-slick-dots li:nth-child(2) button {
+  background: #C0C0C0;
+}
+.car-color-slick-dots li:nth-child(3) button {
+  background: #FFFFFF;
+}
+.car-color-slick-dots li:nth-child(4) button {
+  background: #696969;
+}
+.car-color-slick-dots li:nth-child(5) button {
+  background: #47B1CA;
+  margin-right: 0;
 }
