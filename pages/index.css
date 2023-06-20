@@ -582,13 +582,15 @@
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+
+  margin-top: 6px;
 }
 .info__select-complete-arrow {
   margin-top: 12px;
 }
 
 .info__slider-elements-car {
-  margin-top: 44px;
+  margin-top: 146px;
   max-width: 142px;
   display: flex;
   flex-direction: column;
@@ -599,13 +601,19 @@
 }
 
 .info__slider-color-car {
+  max-width: 461px;
   display: flex;
   flex-direction: column;
 }
 
+
+.info__slider-color-car-img {
+  margin-top: 37px;
+  margin-left: 27px;
+}
+
 .car-color-slick-dots {
-  display: flex;
-  justify-content: center;
+
 }
 
 .car-color-slider {
@@ -617,9 +625,12 @@
 .car-color-slick-dots {
   margin: 0;
   padding: 0;
-  text-align: center;
   display: flex;
   justify-content: center;
+
+  align-self: flex-start;
+  margin-left: 29px;
+  text-align: center;
   list-style: none;
 }
 
@@ -648,7 +659,7 @@
   height: 24px;
   width: 24px;
   background: transparent;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid #fff;
 }
 .car-color-slick-dots li:nth-child(1) button {
   background: #FF0000;
