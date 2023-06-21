@@ -70,7 +70,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  min-width: 100%;
+  width: 100%;
   max-width: 1920px;
 }
 .header__info {
