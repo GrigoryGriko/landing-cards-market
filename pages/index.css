@@ -184,7 +184,12 @@
   font-family: "Open Sans";
   color: #002d96;
   line-height: 1.2;
+
   transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
 }
 
 .header__button-make-call:hover {
@@ -253,7 +258,6 @@
   text-transform: uppercase;
   margin-top: -2px;
 }
-
 
 .content {
   display: flex;
@@ -353,6 +357,10 @@
   position: absolute;
   top: calc(50% + 5px);
   transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
 }
 
 .slick-prev, .slick-next {
@@ -363,6 +371,10 @@
   background-size: contain;
   object-position: center;
   transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  -webkit-transition: opacity .3s ease;
+  -moz-transition: opacity .3s ease;
+  -ms-transition: opacity .3s ease;
 }
 
 .slick-prev, .slick-prev:hover {
@@ -876,6 +888,10 @@
 
   padding-left: 39px;
   transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
 }
 .info__conditions-button-signup-arrow {
   margin-right: 23px;
