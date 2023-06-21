@@ -463,6 +463,22 @@
   margin-right: 7px;
 }
 
+.offer__checkbox-btn {
+  height: 13px;
+  width: 13px;
+  cursor: pointer;
+  border: 1px solid #fff;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.offer__checkbox-btn:checked {
+  background-image: url(../images/checkbox-checked.png);
+  background-size: 9xp 7px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .offer__agreement-cap {
   margin-top: 1px;
 
