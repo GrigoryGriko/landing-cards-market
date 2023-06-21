@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  min-width: 100%;
   margin: 0 auto;
   background-color: #fff;
   font-family: 'Inter', Arial, sans-serif;
@@ -70,7 +70,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  min-width: 100%;
   max-width: 1920px;
 }
 .header__info {
@@ -258,7 +258,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  min-width: 100%;
   max-width: 1920px;
 }
 
